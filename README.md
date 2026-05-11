@@ -2,6 +2,10 @@
 
 Minimal reproduction project for JAR truncation issues with the New Relic Java agent.
 
+This app repros an issue where the agent reports the `httpcore5-5.2.4.jar`, `httpclient5-5.3.1.jar`, and `httpcore5-h2-5.2.4.jar` jar files but the jar names that get displayed in the APM Environment tab are incorrectly truncated by the backend:
+
+![truncated-jar-names.png](images/truncated-jar-names.png)
+
 ## Prerequisites
 
 - JDK 17+
